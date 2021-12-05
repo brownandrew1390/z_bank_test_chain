@@ -1,12 +1,20 @@
 ## How to Run ZBank Test Chain and Make a Test Transaction
 
-1. Using the CLI, access the directory downloaded from this repository and create accounts for two nodes for the network with a separate datadir for each using geth (remember to save the passwords and public and private keys)
+
+Download [MyCrypto App](https://app.mycrypto.com/download-desktop-app) on your local machine 
+
+1. Download geth-and-tools zip and extract into a new directory for this project
+-   >[Windows 64 bit](https://gethstore.blob.core.windows.net/builds/geth-alltools-windows-amd64-1.9.7-a718daa6.zip)
+-   >[Mac](https://gethstore.blob.core.windows.net/builds/geth-alltools-darwin-amd64-1.9.7-a718daa6.tar.gz)
+    
+
+2. Using the CLI, access the directory where you extracted the geth-and-tools zip and create accounts for two nodes for the network with a separate datadir for each using geth (remember to save the passwords and public and private keys)
 
 -   >` ./geth --datadir node1 account new `
 
 -   >` ./geth --datadir node2 account new`
 
-2. Generate genesis block
+3. Generate genesis block
     1. Run puppeth 
     >- `./puppeth`
     2. Name your network 
@@ -20,27 +28,31 @@
     9. Export genesis configurations. This will fail to create two of the files, but you only need `zbank_test_chain.json`.
     10. You can delete the `zbank_test_chain-harmony.json` file.
 
-3. Initialize each node with the new `zbank_test_chain.json` with `geth`.
+4. Initialize each node with the new `zbank_test_chain.json` with `geth`.
 
 -   >`./geth --datadir node1 init zbank_test_chain.json`
 
 -   >`./geth --datadir node2 init zbank_test_chain.json`
+
+- ![Puppeth Config](/Screenshots/puppeth_config.png)
     
-4. Run the first node, unlock the account, enable mining, and the RPC flag. Only one node needs RPC enabled.
+5. Run the first node, unlock the account, enable mining, and the RPC flag. Only one node needs RPC enabled.
 
 -   >`./geth --datadir node1 --unlock "SEALER_ONE_ADDRESS" --mine --rpc --allow-insecure-unlock`
 
-5. In a separate CLI window, set a different peer port for the second node and use the first node's `enode` address as the `bootnode` flag.
+6. In a separate CLI window, set a different peer port for the second node and use the first node's `enode` address as the `bootnode` flag.
 
 -   >`./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock`
 
-6. Use the MyCrypto GUI wallet to connect to the node with the exposed RPC port.
+7. Use the MyCrypto GUI wallet to connect to the node with the exposed RPC port.
 
-7. You will need to use a custom network, and include the chain ID, and use ETH as the currency.
+8. You will need to use a custom network, and include the chain ID, and use ETH as the currency.
 
-8. Import the keystore file from the `node1/keystore` directory into MyCrypto. This will import the private key.
+10. Import the keystore file from the `node1/keystore` directory into MyCrypto. This will import the private key.
 
-9. Send a transaction from the `node1` account to the `node2` account
+- ![Keystore Import](/Screenshots/keystore_import_mycrypto.png)
+
+11. Send a transaction from the `node1` account to the `node2` account
 
 
 
