@@ -1,0 +1,16 @@
+=============== Dec 5, 2021 (CST) ===============
+14:33:11.229487 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:33:11.232485 db@open opening
+14:33:11.234474 version@stat F·[] S·0B[] Sc·[]
+14:33:11.235471 db@janitor F·2 G·0
+14:33:11.235471 db@open done T·2.9861ms
+=============== Dec 5, 2021 (CST) ===============
+14:34:00.352668 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:34:00.353179 version@stat F·[] S·0B[] Sc·[]
+14:34:00.353179 db@open opening
+14:34:00.353179 journal@recovery F·1
+14:34:00.353179 journal@recovery recovering @1
+14:34:00.355222 memdb@flush created L0@2 N·2 S·176B "loc..seq,v2":"version,v1"
+14:34:00.355734 version@stat F·[1] S·176B[176B] Sc·[0.25]
+14:34:00.360365 db@janitor F·3 G·0
+14:34:00.360365 db@open done T·7.186ms

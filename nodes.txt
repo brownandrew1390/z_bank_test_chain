@@ -1,0 +1,14 @@
+Node 1
+---------------------
+Public address of the key:   0x1F374838cB508823Eee1D3fbaEC2E8042b6b4CDB
+Path of the secret key file: node1\keystore\UTC--2021-12-05T19-54-08.581139600Z--1f374838cb508823eee1d3fbaec2e8042b6b4cdb
+password: none (empty)
+enode: enode://e6a858551248b844b8f32da8100dec5c1148381106880976b22d50040c662f1f8f48200872de43fe4f1aa8523023533c0e817326c02c974c43373d36206678f2@127.0.0.1:30303
+Node 2
+---------------------
+Public address of the key:   0xa7fA82Cf0B1B23D9f1004C8560Dd026c12a92479
+Path of the secret key file: node2\keystore\UTC--2021-12-05T19-55-29.895144600Z--a7fa82cf0b1b23d9f1004c8560dd026c12a92479
+password: none (empty)
+
+Chain ID: 999
+
