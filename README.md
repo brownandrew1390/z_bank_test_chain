@@ -34,7 +34,7 @@ Download [MyCrypto App](https://app.mycrypto.com/download-desktop-app) on your l
 
 -   >`./geth --datadir node2 init zbank_test_chain.json`
 
-- ![Puppeth Config](./Screenshots/puppeth_config.png)
+- ![Puppeth Config](./Screenshots/puppeth_config.PNG)
     
 5. Run the first node, unlock the account, enable mining, and the RPC flag. Only one node needs RPC enabled.
 
@@ -50,7 +50,7 @@ Download [MyCrypto App](https://app.mycrypto.com/download-desktop-app) on your l
 
 10. Import the keystore file from the `node1/keystore` directory into MyCrypto. This will import the private key.
 
-- ![Keystore Import](./Screenshots/keystore_import_mycrypto.png)
+- ![Keystore Import](./Screenshots/keystore_import_mycrypto.PNG)
 
 11. Send a transaction from the `node1` account to the `node2` account
 
