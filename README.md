@@ -8,7 +8,7 @@ Download [MyCrypto App](https://app.mycrypto.com/download-desktop-app) on your l
 -   >[Mac](https://gethstore.blob.core.windows.net/builds/geth-alltools-darwin-amd64-1.9.7-a718daa6.tar.gz)
     
 
-2. Using the CLI, access the directory where you extracted the geth-and-tools zip and create accounts for two nodes for the network with a separate datadir for each using geth (remember to save the passwords and public and private keys)
+2. Using the CLI, access the directory where you extracted the geth-and-tools zip and create accounts for two nodes for the network using geth (remember to save the passwords and public and private keys)
 
 -   >` ./geth --datadir node1 account new `
 
